@@ -1,4 +1,4 @@
-public class Car {
+public abstract class Car {
     private final String make;
     private final int year;
     private int mileage;
@@ -38,4 +38,6 @@ public class Car {
                 + "\nMileage: " + this.getMileage()
                 + "\nVIN: " + this.getVin();
     }
+
+    public abstract void makeHornNoise();
 }

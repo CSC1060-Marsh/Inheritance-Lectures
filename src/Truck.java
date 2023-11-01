@@ -8,6 +8,16 @@ public class Truck extends Car {
 
     @Override
     public String getListingText() {
-        return "Hey I'm a truck!";
+        return super.getListingText()
+                + "\nGround Clearance in Inches: " + this.groundClearanceInInches;
+    }
+
+    @Override
+    public void makeHornNoise() {
+        System.out.println("VWAGGGGGG");
+    }
+
+    public void doTruckThings() {
+        System.out.println("Woo I'm a truck!");
     }
 }
